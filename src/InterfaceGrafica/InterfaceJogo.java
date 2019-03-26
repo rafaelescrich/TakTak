@@ -50,7 +50,7 @@ public class InterfaceJogo {
 	private void initialize() {
 		atorJogador = new AtorJogador();
 		
-		frame = new JFrame();
+		frame = new JFrame("Tak Tak! Avance, Empilhe e Ataque");
 		frame.setBounds(100, 100, 1280, 720);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -94,9 +94,7 @@ public class InterfaceJogo {
 		}
 	}
 	private class SwingAction_1 extends AbstractAction {
-		/**
-		 * 
-		 */
+
 		private static final long serialVersionUID = 1L;
 		public SwingAction_1() {
 			putValue(NAME, "Desconectar");
@@ -108,9 +106,7 @@ public class InterfaceJogo {
 		}
 	}
 	private class SwingAction_2 extends AbstractAction {
-		/**
-		 * 
-		 */
+
 		private static final long serialVersionUID = 1L;
 		public SwingAction_2() {
 			putValue(NAME, "Iniciar Partida");
@@ -122,13 +118,11 @@ public class InterfaceJogo {
 		}
 	}
 	private class SwingAction_3 extends AbstractAction {
-		/**
-		 * 
-		 */
+
 		private static final long serialVersionUID = 1L;
 		public SwingAction_3() {
-//			putValue(NAME, "Sair");
-//			putValue(SHORT_DESCRIPTION, "Saindo do Jogo");
+			putValue(NAME, "Sair");
+			putValue(SHORT_DESCRIPTION, "Saindo do Jogo");
 		}
 		public void actionPerformed(ActionEvent e) {
 			//Fechar programa
