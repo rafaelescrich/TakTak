@@ -75,7 +75,7 @@ public class InterfaceJogo {
 		mnNewMenu.add(mntmIniciarPartida);
 		
 		JMenuItem mntmSair = new JMenuItem("Sair");
-		mntmIniciarPartida.setAction(action_3);
+		mntmIniciarPartida.setAction(action_3); 
 		mnNewMenu.add(mntmSair);
 	}
 	private class SwingAction extends AbstractAction {
@@ -88,7 +88,7 @@ public class InterfaceJogo {
 			putValue(SHORT_DESCRIPTION, "Conectar ao Servidor Netgames");
 		}
 		public void actionPerformed(ActionEvent e) {
-			// Necessário definir endereço do servidor e nome do jogador
+			// Necessï¿½rio definir endereï¿½o do servidor e nome do jogador
 			String mensagem = atorJogador.conectar("localhost", "nomeJogador?");
 			JOptionPane.showMessageDialog(null, mensagem);
 		}
